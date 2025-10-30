@@ -1,0 +1,72 @@
+/* 搜索框容器的整体样式 */
+#chat-search-bar {
+    position: fixed; /* 固定在屏幕上 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    padding: 8px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 底部轻微阴影 */
+    z-index: 10000; /* 确保在最顶层 */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 元素之间的间距 */
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 隐藏搜索框时的样式 */
+#chat-search-bar.hidden {
+    transform: translateY(-100%);
+}
+
+/* 取消按钮 */
+#search-cancel {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* 搜索输入框 */
+#search-input {
+    flex-grow: 1; /* 占据剩余空间 */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1em;
+    border-bottom: 2px solid #007bff; /* 蓝色下划线 */
+}
+
+/* 结果计数器 */
+#search-counter {
+    color: #6c757d; /* 灰色文字 */
+    white-space: nowrap; /* 防止换行 */
+}
+
+/* 上下导航按钮 */
+.search-nav-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #343a40;
+    user-select: none; /* 防止选中文字 */
+}
+
+.search-nav-button.disabled {
+    color: #adb5bd; /* 禁用时的颜色 */
+    cursor: not-allowed;
+}
+
+/* 在聊天记录中高亮显示关键词的样式 */
+.search-highlight {
+    background-color: #ffc107; /* 黄色高亮 */
+    color: black;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+
+/* 当前活动的高亮结果的样式 */
+.search-highlight.current {
+    background-color: #fd7e14; /* 橙色高亮 */
+    box-shadow: 0 0 5px #fd7e14;
+}
