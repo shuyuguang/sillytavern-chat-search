@@ -1,0 +1,9 @@
+{
+    "name": "Chat Search",
+    "author": "YourUsername",
+    "description": "Adds a search bar to find keywords within the current chat and navigate between the results.",
+    "version": "1.0.0",
+    "publish_date": "2023-10-27",
+    "script": "script.js",
+    "style": "style.css"
+}
