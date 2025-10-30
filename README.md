@@ -1,0 +1,1 @@
+# sillytavern-chat-search
